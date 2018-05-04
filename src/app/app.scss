@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,74 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+@font-face {
+    font-family: High_Tide;
+    src: url('../assets/font/High_Tide.ttf') format("truetype");
+    font-weight: 200
+}
+.isInCall {
+	display:none;
+}
+.profileImage {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.padding {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+} // @todo: get rid of all the important statements.
+// was easier to just do be lazy when converting from v1 to v2.
+.round {
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+    border: #e5e5e5 solid 4px;
+    margin: auto;
+    margin-top: 6vh;
+    overflow: hidden;
+}
+
+.name_style {
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-ios {
+    // margin-top: 17px !important;
+}
+
+.photos {
+    margin: auto;
+    margin-top: 20px;
+    width: 82vw;
+    height: 54vw;
+    .photos_row {
+        width: 100%;
+        height: 50%;
+        .photos_col {
+            background: #7f7f7f;
+            width: 33%;
+            height: 100%;
+            float: left;
+            img {
+                width: 100%; // height: 100%;;
+            }
+            overflow: hidden;
+            border: 0.02px solid white;
+        }
+    }
+}
+
+@import "../theme/theme.scss";

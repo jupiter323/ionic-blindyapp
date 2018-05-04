@@ -1,0 +1,24 @@
+page-profile-photos {
+    ion-icon {
+        z-index: 1;
+        font-size: 30px;
+        margin: 10px;
+        font-weight: 200;
+    }
+    ion-row {
+        margin-top: 20px;
+    }
+    p{
+        text-align: center;
+        color: #7f7f7f;
+        margin-top: 40px;
+    }
+    .backgroundF{
+        height: 22vh;
+        width: 100vw;
+        position: absolute;
+        background: #764b8e;
+
+    }
+
+}
