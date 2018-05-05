@@ -27,15 +27,15 @@ export class Config {
             urls: 'stun:stun.services.mozilla.com'
         }, {
             urls: 'stun:numb.viagenie.ca',
-            // username: 'minami',
-            // credential: 'zero1127'
+            //username: 'minami',
+            //credential: 'zero1127'
             username: 'yuriupwork@gmail.com',
 
             credential: 'jupiter12345'
         }, {
             urls: 'turn:numb.viagenie.ca',
-            // username: 'minami',
-            // credential: 'zero1127'
+            //username: 'minami',
+            //credential: 'zero1127'
             
             username: 'yuriupwork@gmail.com',
 

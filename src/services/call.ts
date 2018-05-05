@@ -97,7 +97,9 @@ export class CallService {
 						id: contact.email,
 						name: contact.user.name,
 						username: contact.user.username,
-						image: contact.user.Profile_pic
+						image: contact.user.Profile_pic,
+						imagePath:Config.providerurl + contact.user.Profile_pic
+
 					}
 					this.contact = tempcontact
 

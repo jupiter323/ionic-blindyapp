@@ -46,6 +46,9 @@ page-home {
         height: 50px;
         width: 50px;
         border-radius: 50%;
+        position: absolute;
+        top:12px;
+
     }
     #logo {
         height: 250px;
@@ -59,6 +62,32 @@ page-home {
         height: 77px;
         border-top: 0.55px solid #c8c7cc !important;
         border-bottom: 0.55px solid #c8c7cc !important;
+        .item-ios {
+            position: absolute;
+            top: 15px;
+            left: 70px;
+            .requestsent{
+                position: absolute;
+                top:4px;
+                right:20px;
+                .requestspan{
+                    position: absolute;
+                    right:60px;
+
+                }
+            }
+            .friendUn{
+                position: absolute;
+                top: 23px;
+                right: 22px!important;
+            }
+            .itemicon{
+                position: absolute;
+                right: 20px;
+                top: 15px;
+
+            }
+        }
     }
     .content {
         overflow: hidden;
@@ -296,7 +325,7 @@ page-home {
         font-size: 13px;
         display: none;
     }
-    .label-ios {
-        margin: 0 !important;
-    }
+
+
+
 }

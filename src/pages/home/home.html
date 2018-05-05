@@ -184,15 +184,15 @@
 								<ion-item no-lines class="itemDes">
 									<span class="name">{{friend.name}}</span>
 									<br/>
-									<div *ngIf="friend.more.Status !== 'Unfriend' " style="margin-left: 10px;padding-top: 10px">
-										<span *ngIf="friend.more.Status == 'Remove request' " style="font-size:13px;font-weight: lighter;">Request sent</span>
+									<div *ngIf="friend.more.Status !== 'Unfriend' " class="requestsent" style="margin-left: 10px;padding-top: 10px">
+										<span *ngIf="friend.more.Status == 'Remove request' " class="requestspan" style="font-size:13px;font-weight: lighter;">Request sent</span>
 										<button *ngIf="friend.more.Status == 'Accept' " class="acceptbtn" (click)="action(['Accept', friend.more.Id])">{{friend.more.Status}}</button>
 										<ion-icon style="float: right" class="friendIcon" name="chatbubbles" (click)="friendClicked(['chat', friend, email])">
-											<span class="unreadF" *ngIf="(friend.message.from !== email && friend.unread !== 0)">{{friend.unread}}</span>
+											<span class="unreadF friendUn" *ngIf="(friend.message.from !== email && friend.unread !== 0)">{{friend.unread}}</span>
 										</ion-icon>
 
 									</div>
-									<div *ngIf="friend.more.Status == 'Unfriend' " style="float:right;">
+									<div *ngIf="friend.more.Status == 'Unfriend' " class="itemicon">
 
 										<ion-icon class="friendIcon" (click)="call(friend,'video')" name="videocam"></ion-icon>
 										<!-- <ion-icon class="friendIcon" (click)="provider.callActon({callType: 'video', to: {
@@ -204,7 +204,7 @@
 										<ion-icon class="friendIcon" (click)="call(friend,'call')" name="call"></ion-icon>
 
 										<ion-icon class="friendIcon" name="chatbubbles" (click)="friendClicked(['chat', friend, email])">
-											<span class="unreadF" *ngIf="(friend.message.from !== email && friend.unread !== 0)">{{friend.unread}}</span>
+											<span class="unreadF friendUn" *ngIf="(friend.message.from !== email && friend.unread !== 0)">{{friend.unread}}</span>
 										</ion-icon>
 
 
